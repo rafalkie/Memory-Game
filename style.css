@@ -1,0 +1,79 @@
+body{
+    background: silver;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.container{
+    width:1000px;
+    margin:auto;
+    text-align: center;
+    position: relative;
+}
+.board{
+    width:650px;
+    height:550px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+}
+.card{
+    box-sizing: border-box;
+    border: 2px solid #0868ab;
+    width:150px;
+    height: 130px;
+    background: url('img/card.png');
+}
+.card:hover{
+    border:2px solid #c12323;
+    cursor: pointer;
+}
+#message{
+    display: none;
+    font-size: 20px;
+    color:white;
+    text-transform: uppercase;
+    background: #c12323;
+    padding: 5px;
+    min-width: 100px;
+    width: fit-content;
+    position: absolute;
+    left:0;
+    right:0;
+    margin: auto;
+    top:50%;
+
+}
+
+#win {
+    display: none;
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: fit-content;
+    margin: auto;
+    top: 60%;
+    background: #1875bf;
+    color: white;
+    font-weight: 900;
+    border: 0px;
+    padding: 18px;
+    text-transform: uppercase;
+}
+#win:hover{
+    background: white;
+    color:#1875bf;
+    cursor: pointer;
+    border:1px;
+}
+#hit{
+    color: #b0f72b;
+}
+#attempt{
+    color:white;
+}
+.info{
+    background: #0868ab;
+    width: fit-content;
+    margin: auto;
+    padding: 12px;
+}
